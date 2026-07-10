@@ -15,7 +15,7 @@ const mapUser=(user)=>{
     }
     // 픽스가 되어 있는 것. 내 맘대로 가져갈 수 없음
     return{
-        Uid:user.uid,
+        uid:user.uid,
         email:user.email,
     }
 }

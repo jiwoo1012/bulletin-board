@@ -55,12 +55,12 @@ const PostForm = () => {
             setTitle(e.target.value)
          }} />
         <input className={styles.input} type="text" value={user?.email || ''} readOnly />
-         <textarea className={styles.textarea} placeholder='글 내용을 입력하세요.' value={content}
+        <textarea className={styles.textarea} placeholder='글 내용을 입력하세요.' value={content}
          onChange={ (e)=>{
             setContent(e.target.value)
          }} />
         <button className={styles.submitBtn} onClick={submitB} disabled={loading}>
-            {loading ? '등록중' : '등록'}
+            {loading ? '등록 중' : '등록'}
         </button>
     </div>
     </div>
