@@ -1,0 +1,94 @@
+@use '../scss/mixin' as m;
+@use '../scss/variables' as v;
+
+.listBox {
+    width: 700px;
+    padding: 1.6rem;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+
+    h3 {
+        font-size: 25px;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #222;
+    }
+}
+
+.empty {
+    text-align: center;
+    padding: 2rem 0;
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+
+    th, td {
+        padding: 0.75rem 0.6rem;
+        text-align: center;
+        border-bottom: 1px solid #eee;
+    }
+
+    th {
+        color: #666;
+        font-weight: 600;
+        border-bottom: 2px solid tomato;
+    }
+
+    tbody tr {
+        transition: background 0.15s ease;
+
+        &:hover {
+            background: #fafafa;
+        }
+    }
+}
+
+.titleCell {
+    text-align: left;
+
+    a {
+        color: #222;
+        text-decoration: none;
+        font-weight: 500;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.actionCell {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+}
+
+.editLink {
+    color: #555;
+    font-size: 0.85rem;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.deleteBtn {
+    border: none;
+    background: none;
+    color: #d64545;
+    font-size: 0.85rem;
+    cursor: pointer;
+    padding: 0;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

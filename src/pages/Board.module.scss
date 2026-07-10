@@ -1,0 +1,27 @@
+@use '../scss/mixin' as m;
+@use '../scss/variables' as v;
+
+.wrap {
+    margin: 40px auto;
+    padding: 2rem;
+    background-image: url('../assets/tomato.png');
+    background-repeat: no-repeat;
+    background-position: 1320px 550px;
+    background-size: 350px;     
+    background-attachment: fixed;
+
+    h2 {
+        font-size: 70px;
+        font-weight: 700;
+        padding-left: 50px;
+        margin-bottom:80px;
+        color: tomato;
+    }
+}
+
+.boardContent {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+}
