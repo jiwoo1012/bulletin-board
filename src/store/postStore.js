@@ -4,7 +4,7 @@ import {
   deletePostFromFirestore,
   addPostToFirestore,
   fetchPostsFromFirestore
-} from '../service/FirestorePost'
+} from '../service/firestorePost'
 
 const getPostErrorMessage = (error) =>{
   if(error.code === 'permission-denied'){
