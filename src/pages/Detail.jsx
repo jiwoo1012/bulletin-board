@@ -10,8 +10,8 @@ const Detail = () => {
    const updatePost = usePostStore( (state) => state.updatePost)
    
    const post = posts.find((item)=>{
-            return item.id === Number(id)
-   })
+    return item.id === id   // Number() 제거
+  })
 
    const [isEdit, setIsEdit] = useState(false)
    const [title, setTitle] = useState( post ? post.title : '' )
@@ -52,7 +52,7 @@ const Detail = () => {
         {
             isEdit ? (
                 <div className={styles.card}>
-                  <p className={styles.row}> <strong>번호</strong> {post.id}</p>
+                  {/* <p className={styles.row}> <strong>번호</strong> {post.id}</p> */}
                   <input className={styles.input} type='text' value={title} 
                   onChange={(e)=>{
                       setTitle(e.target.value)} }

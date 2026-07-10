@@ -25,10 +25,10 @@ const PostList = () => {
                 </thead>
                 <tbody>
                     {
-                        posts.map( (item) => {
+                        posts.map( (item, index) => {
                             return (
                                 <tr key={item.id}>
-                                    <td>{item.id}</td>
+                                    <td>{posts.length - index}</td>
                                     <td className={styles.titleCell}><Link to={`/detail/${item.id}`}>{item.title}</Link></td>
                                     <td>{item.writer}</td>
                                     <td className={styles.actionCell}>

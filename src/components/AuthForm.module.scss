@@ -1,0 +1,111 @@
+.gnb {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 10px 20px;
+    background-image: url('../assets/detailbg.jpg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: 300px;
+    position: relative;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.input {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+    border: 1px solid #555;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #1a1a1a;
+    outline: none;
+    width: 140px;
+
+    &::placeholder {
+        color: #999;
+    }
+
+    &:focus {
+        border-color: tomato;
+    }
+}
+
+.submitBtn {
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: white;
+    background-color: tomato;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+
+    &:hover:not(:disabled) {
+        
+        color: white;
+        background-color: rgb(79, 138, 52);
+        border: none;
+    }
+
+    &:disabled {
+        opacity: 0.6;
+        cursor: not-allowed;
+    }
+}
+
+.switchBtn {
+    padding: 6px 10px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #333;
+    background: none;
+    border: 1.5px solid rgb(221, 66, 38);
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+
+    &:hover {
+        color: white;
+        background-color: rgb(79, 138, 52);
+        border: none;
+    }
+}
+
+.userEmail {
+    font-size: 0.85rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.logoutBtn {
+    padding: 6px 14px;
+    font-size: 0.85rem;
+    color: tomato;
+    font-weight: bold;
+    background: none;
+    border: 1.5px solid #611010;
+    border-radius: 6px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: tomato;
+        font-weight: bold;
+        border: none;
+        color: white;
+    }
+}
+
+.errorMsg {
+    position: absolute;
+    right: 20px;
+    bottom: -20px;
+    font-size: 0.75rem;
+    color: #ff6b6b;
+}

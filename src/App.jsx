@@ -26,16 +26,12 @@ const App = () => {
 
   return (
     <div>
-      { user ? (
-        <>
-          <p>{user.email}</p>
-          <button onClick={signOut}>로그아웃</button>
-        </>
-      ):initialized ? (
-        <>
-          <AuthForm/>
-        </>
-      ):(<p>로그인 상태 확인 중</p>)}
+      <header>
+        { initialized ? (
+            <AuthForm/>
+        ):(<p>로그인 상태 확인 중</p>)}
+      </header>
+      
       <Routes>
          <Route path='/' element={ <Board />} />
          <Route path='/detail/:id' element={ <Detail />} />
@@ -52,7 +48,6 @@ export default App
 // Read: 읽기(글 목록 상세 보기)
 // Update: 수정(글 수정)
 // Delete: 삭제(글 삭제)
-
 
 
 // 게시글 하나는 객체로 만든다.
